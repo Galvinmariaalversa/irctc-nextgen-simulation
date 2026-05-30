@@ -573,6 +573,22 @@ html.dark #toSuggestions li:hover {
   overflow: hidden;
 }
 
+.inner-hero-bg {
+  background: linear-gradient(135deg, #0a1e4a 0%, #0f2d6b 50%, #060d1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.inner-hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(249, 115, 22, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
 /* Home landing hero specific styles */
 #home.hero-bg {
   min-height: 600px;

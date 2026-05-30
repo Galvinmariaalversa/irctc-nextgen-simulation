@@ -14,7 +14,7 @@
             document.documentElement.classList.remove("dark");
         })();
     </script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 dark:bg-slate-950 transition-colors duration-200">
@@ -88,7 +88,7 @@
                     <div class="h-6 w-px bg-gray-200 dark:bg-slate-700"></div>
                     <!-- IRCTC Globe Logo Image -->
                     <div class="w-12 h-12 flex-shrink-0 drop-shadow-sm">
-                        <img src="irctc-logo.png" alt="IRCTC Logo" class="h-full w-full object-contain">
+                        <img src="assets/images/irctc-logo.png" alt="IRCTC Logo" class="h-full w-full object-contain">
                     </div>
                     <!-- Text Branding -->
                     <div class="hidden sm:block">
@@ -132,7 +132,7 @@
 
     <main>
         <!-- Progress Section -->
-        <section class="hero-bg text-white py-8">
+        <section class="inner-hero-bg text-white py-8">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
                     <h1 class="text-3xl md:text-4xl font-bold">Review Your Journey</h1>
@@ -209,7 +209,7 @@
                         <div class="overflow-x-auto">
                             <table class="w-full text-left text-sm border-collapse">
                                 <thead>
-                                    <tr class="bg-gray-150 dark:bg-slate-900 text-gray-700 dark:text-gray-300 font-bold border-b dark:border-slate-700">
+                                    <tr class="bg-gray-200 dark:bg-slate-900 text-gray-700 dark:text-gray-300 font-bold border-b dark:border-slate-700">
                                         <th class="p-3">#</th>
                                         <th class="p-3">Full Name</th>
                                         <th class="p-3">Age / Gender</th>
@@ -264,7 +264,7 @@
 
                         <div class="bg-green-50 dark:bg-green-950/20 p-4 rounded-xl mb-6 border border-green-100/50 dark:border-slate-800/50">
                             <div class="flex justify-between items-center">
-                                <span class="text-gray-750 dark:text-gray-300 font-bold">Total Amount:</span>
+                                <span class="text-gray-700 dark:text-gray-300 font-bold">Total Amount:</span>
                                 <span id="totalFareVal" class="text-3xl font-extrabold text-green-600 dark:text-green-400">₹0</span>
                             </div>
                             <p class="text-[10px] text-gray-500 dark:text-gray-400 mt-2">*Includes convenience fees and terminal taxes</p>
@@ -311,7 +311,7 @@
             }
         });
     </script>
-    <script src="booking-review.js"></script>
-    <script src="disha-chatbot.js"></script>
+    <script src="assets/js/booking-review.js"></script>
+    <script src="assets/js/disha-chatbot.js"></script>
 </body>
 </html>

@@ -14,9 +14,9 @@
             document.documentElement.classList.remove("dark");
         })();
     </script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="languages.js"></script>
+    <script src="assets/js/languages.js"></script>
 </head>
 <body class="bg-gray-50 dark:bg-slate-950 transition-colors duration-200">
 
@@ -96,7 +96,7 @@
                     <div class="h-6 w-px bg-gray-200 dark:bg-slate-700"></div>
                     <!-- IRCTC Globe Logo Image -->
                     <div class="w-12 h-12 flex-shrink-0 drop-shadow-sm">
-                        <img src="irctc-logo.png" alt="IRCTC Logo" class="h-full w-full object-contain">
+                        <img src="assets/images/irctc-logo.png" alt="IRCTC Logo" class="h-full w-full object-contain">
                     </div>
                     <!-- Text Branding -->
                     <div class="hidden sm:block">
@@ -143,11 +143,11 @@
 
     <main>
         <!-- SECTION 1: HEADER & BREADCRUMB -->
-        <section class="hero-bg text-white py-12 md:py-16">
+        <section class="inner-hero-bg text-white py-12 md:py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Breadcrumb -->
                 <nav class="text-xs mb-4 text-orange-400 font-bold uppercase tracking-wider flex items-center gap-1.5">
-                    <a href="index.html" class="hover:text-orange-350 transition-colors">Home</a>
+                    <a href="index.html" class="hover:text-orange-300 transition-colors">Home</a>
                     <span class="text-white/60 font-normal">›</span>
                     <span class="text-white font-extrabold">Help & Support</span>
                 </nav>
@@ -167,7 +167,7 @@
                         type="text" 
                         id="searchInput"
                         placeholder="Search help topics (cancellation, refund, PNR issues, booking...)" 
-                        class="w-full px-4 py-3 border-0 focus:outline-none text-gray-750 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-500 text-lg bg-transparent"
+                        class="w-full px-4 py-3 border-0 focus:outline-none text-gray-700 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-500 text-lg bg-transparent"
                     >
                 </div>
                 <div id="searchResults" class="mt-4 hidden border-t dark:border-slate-700 pt-4">
@@ -185,7 +185,7 @@
                     <div>
                         <div class="text-4xl mb-4"><i class="fas fa-id-card text-blue-600"></i></div>
                         <h3 class="text-lg font-bold text-blue-900 dark:text-white mb-2">PNR Status Help</h3>
-                        <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed mb-4">Track your booking, check seat status, and view booking details using your PNR number.</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">Track your booking, check seat status, and view booking details using your PNR number.</p>
                     </div>
                     <button onclick="scrollToFAQ('PNR')" class="text-blue-600 dark:text-orange-400 hover:text-blue-800 dark:hover:text-orange-300 font-semibold text-xs flex items-center gap-2 mt-2 self-start">
                         Learn More <i class="fas fa-arrow-right text-[10px]"></i>
@@ -197,7 +197,7 @@
                     <div>
                         <div class="text-4xl mb-4"><i class="fas fa-ticket-alt text-orange-600"></i></div>
                         <h3 class="text-lg font-bold text-blue-900 dark:text-white mb-2">Ticket Booking Problems</h3>
-                        <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed mb-4">Having trouble booking tickets? Find solutions for common booking errors and issues.</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">Having trouble booking tickets? Find solutions for common booking errors and issues.</p>
                     </div>
                     <button onclick="scrollToFAQ('Booking')" class="text-blue-600 dark:text-orange-400 hover:text-blue-800 dark:hover:text-orange-300 font-semibold text-xs flex items-center gap-2 mt-2 self-start">
                         Learn More <i class="fas fa-arrow-right text-[10px]"></i>
@@ -209,7 +209,7 @@
                     <div>
                         <div class="text-4xl mb-4"><i class="fas fa-wallet text-green-600"></i></div>
                         <h3 class="text-lg font-bold text-blue-900 dark:text-white mb-2">Payment & Refund Issues</h3>
-                        <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed mb-4">Deduction without booking confirmation? Check refund timelines and troubleshooting.</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">Deduction without booking confirmation? Check refund timelines and troubleshooting.</p>
                     </div>
                     <button onclick="scrollToFAQ('Payments')" class="text-blue-600 dark:text-orange-400 hover:text-blue-800 dark:hover:text-orange-300 font-semibold text-xs flex items-center gap-2 mt-2 self-start">
                         Learn More <i class="fas fa-arrow-right text-[10px]"></i>
@@ -221,7 +221,7 @@
                     <div>
                         <div class="text-4xl mb-4"><i class="fas fa-user-lock text-purple-600"></i></div>
                         <h3 class="text-lg font-bold text-blue-900 dark:text-white mb-2">Login & Account Help</h3>
-                        <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed mb-4">Forgot password? Account locked? Get help with account access and verification.</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">Forgot password? Account locked? Get help with account access and verification.</p>
                     </div>
                     <button onclick="scrollToFAQ('Account')" class="text-blue-600 dark:text-orange-400 hover:text-blue-800 dark:hover:text-orange-300 font-semibold text-xs flex items-center gap-2 mt-2 self-start">
                         Learn More <i class="fas fa-arrow-right text-[10px]"></i>
@@ -231,9 +231,9 @@
                 <!-- Card 5: Senior Citizen & Special Quotas -->
                 <div class="card card-hover p-6 border-l-4 border-l-red-600 flex flex-col justify-between">
                     <div>
-                        <div class="text-4xl mb-4"><i class="fas fa-wheelchair text-red-650"></i></div>
+                        <div class="text-4xl mb-4"><i class="fas fa-wheelchair text-red-600"></i></div>
                         <h3 class="text-lg font-bold text-blue-900 dark:text-white mb-2">Senior & Special Quotas</h3>
-                        <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed mb-4">Information about Sr. Citizen, Divyaang, and other special quota booking rules.</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">Information about Sr. Citizen, Divyaang, and other special quota booking rules.</p>
                     </div>
                     <a href="index.html" class="text-blue-600 dark:text-orange-400 hover:text-blue-800 dark:hover:text-orange-300 font-semibold text-xs flex items-center gap-2 mt-2 self-start">
                         Learn More <i class="fas fa-arrow-right text-[10px]"></i>
@@ -245,7 +245,7 @@
                     <div>
                         <div class="text-4xl mb-4"><i class="fas fa-bolt text-teal-600"></i></div>
                         <h3 class="text-lg font-bold text-blue-900 dark:text-white mb-2">Tatkal & Premium Tatkal</h3>
-                        <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed mb-4">Tatkal booking timings, rules, charges, and how to book last-minute tickets.</p>
+                        <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">Tatkal booking timings, rules, charges, and how to book last-minute tickets.</p>
                     </div>
                     <button onclick="scrollToFAQ('Tatkal')" class="text-blue-600 dark:text-orange-400 hover:text-blue-800 dark:hover:text-orange-300 font-semibold text-xs flex items-center gap-2 mt-2 self-start">
                         Learn More <i class="fas fa-arrow-right text-[10px]"></i>
@@ -271,19 +271,19 @@
                     <div class="faq-content hidden px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 space-y-4 border-t dark:border-slate-700">
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Why is my booking failing?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Booking failures can occur due to: (1) Network connectivity issues, (2) Session timeout, (3) Invalid station selection, (4) Insufficient balance in payment account. Try refreshing and booking again. If issue persists, contact support.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Booking failures can occur due to: (1) Network connectivity issues, (2) Session timeout, (3) Invalid station selection, (4) Insufficient balance in payment account. Try refreshing and booking again. If issue persists, contact support.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">How to change the date of journey?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">To modify your journey date: Log in → Go to My Bookings → Select the ticket → Click "Modify Booking" → Choose new date (subject to availability and modification charges if applicable) → Confirm changes.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">To modify your journey date: Log in → Go to My Bookings → Select the ticket → Click "Modify Booking" → Choose new date (subject to availability and modification charges if applicable) → Confirm changes.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">What is Premium Tatkal?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Premium Tatkal (PT) allows booking of premium coaches (1A, 2A, 3A) up to 180 days in advance. Charges are higher than regular Tatkal. Suitable for business travelers and those planning long journeys in advance.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Premium Tatkal (PT) allows booking of premium coaches (1A, 2A, 3A) up to 180 days in advance. Charges are higher than regular Tatkal. Suitable for business travelers and those planning long journeys in advance.</p>
                         </div>
                         <div class="faq-item">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Can I book multiple tickets in one transaction?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Yes, you can book up to 6 passengers in a single transaction. Enter passenger details, select seats if required, and proceed to payment.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Yes, you can book up to 6 passengers in a single transaction. Enter passenger details, select seats if required, and proceed to payment.</p>
                         </div>
                     </div>
                 </div>
@@ -300,19 +300,19 @@
                     <div class="faq-content hidden px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 space-y-4 border-t dark:border-slate-700">
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Payment deducted but ticket not booked – what to do?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">If your payment is deducted but booking fails: (1) Check your registered email for confirmation. (2) If no confirmation within 5 minutes, don't retry – contact support. (3) Refund will be processed within 3-5 business days to your original payment method.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">If your payment is deducted but booking fails: (1) Check your registered email for confirmation. (2) If no confirmation within 5 minutes, don't retry – contact support. (3) Refund will be processed within 3-5 business days to your original payment method.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">What is the refund timeline for cancelled tickets?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">After cancellation: Debit/Credit cards → 5-7 business days | Net Banking → 2-3 business days | UPI → 1-2 business days | Wallet → Instant. Cancellation charges apply as per IRCTC policy.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">After cancellation: Debit/Credit cards → 5-7 business days | Net Banking → 2-3 business days | UPI → 1-2 business days | Wallet → Instant. Cancellation charges apply as per IRCTC policy.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Why is my UPI/NetBanking refund delayed?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Refunds can be delayed due to: (1) Bank server issues, (2) Incorrect account details, (3) Holiday periods. If refund doesn't arrive within stipulated time, contact your bank and provide IRCTC transaction ID.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Refunds can be delayed due to: (1) Bank server issues, (2) Incorrect account details, (3) Holiday periods. If refund doesn't arrive within stipulated time, contact your bank and provide IRCTC transaction ID.</p>
                         </div>
                         <div class="faq-item">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Can I get a refund after my train has departed?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">No. Once the train departs, no refund is possible. However, you can claim compensation if the train was cancelled or significantly delayed. File a claim through "Help & Support" section in your account.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">No. Once the train departs, no refund is possible. However, you can claim compensation if the train was cancelled or significantly delayed. File a claim through "Help & Support" section in your account.</p>
                         </div>
                     </div>
                 </div>
@@ -329,19 +329,19 @@
                     <div class="faq-content hidden px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 space-y-4 border-t dark:border-slate-700">
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">How to reset my forgotten password?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">On login page, click "Forgot Password" → Enter your registered email/mobile → You'll receive an OTP on your email or SMS → Enter OTP → Set a new password → Login with new credentials.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">On login page, click "Forgot Password" → Enter your registered email/mobile → You'll receive an OTP on your email or SMS → Enter OTP → Set a new password → Login with new credentials.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">My account is locked. How to unlock it?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Account gets locked after 5 incorrect login attempts for security. Wait 24 hours, or use "Forgot Password" to reset and regain access immediately. Contact support if issue persists.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Account gets locked after 5 incorrect login attempts for security. Wait 24 hours, or use "Forgot Password" to reset and regain access immediately. Contact support if issue persists.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Email/Phone verification failed. What should I do?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Check if you entered the correct OTP (valid for 10 minutes). Ensure your email and mobile number are correct in account settings. If OTP not received, request a new OTP or contact support.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Check if you entered the correct OTP (valid for 10 minutes). Ensure your email and mobile number are correct in account settings. If OTP not received, request a new OTP or contact support.</p>
                         </div>
                         <div class="faq-item">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Can I change my registered email or mobile number?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Yes. Go to Account Settings → Edit Profile → Change email/mobile → Verify with OTP → Save changes. Your account will remain active during this process.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Yes. Go to Account Settings → Edit Profile → Change email/mobile → Verify with OTP → Save changes. Your account will remain active during this process.</p>
                         </div>
                     </div>
                 </div>
@@ -358,19 +358,19 @@
                     <div class="faq-content hidden px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 space-y-4 border-t dark:border-slate-700">
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">How to check live train status?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Go to "Quick Links" → "Live Train Status" → Enter train number/name → Select date → View real-time location, current status, and expected arrival/departure times at each station.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Go to "Quick Links" → "Live Train Status" → Enter train number/name → Select date → View real-time location, current status, and expected arrival/departure times at each station.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">What are train running days?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Running days show which days a train operates (Monday, Tuesday, etc.). Search for trains based on your preferred travel date to see which trains run on that day. Some trains don't run on certain days.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Running days show which days a train operates (Monday, Tuesday, etc.). Search for trains based on your preferred travel date to see which trains run on that day. Some trains don't run on certain days.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">How to check seat availability?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Enter from/to stations, date, and class → Click "Search Trains" → Each train shows available seats. Green = Available | Yellow = Limited | Red = Not Available. Availability updates in real-time.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Enter from/to stations, date, and class → Click "Search Trains" → Each train shows available seats. Green = Available | Yellow = Limited | Red = Not Available. Availability updates in real-time.</p>
                         </div>
                         <div class="faq-item">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">What does my PNR status mean?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">CNF = Confirmed | RAC = Reservation Against Cancellation (waitlist) | WL = Waiting List. RAC and WL passengers may get confirmed as other passengers cancel.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">CNF = Confirmed | RAC = Reservation Against Cancellation (waitlist) | WL = Waiting List. RAC and WL passengers may get confirmed as other passengers cancel.</p>
                         </div>
                     </div>
                 </div>
@@ -379,27 +379,27 @@
                 <div id="faq-Tatkal" class="card">
                     <button class="w-full px-6 py-5 flex justify-between items-center hover:bg-slate-50 dark:hover:bg-slate-900/30 transition category-header" onclick="toggleFAQ(this)">
                         <div class="flex items-center gap-3 text-left">
-                            <i class="fas fa-ban text-red-650 text-xl"></i>
+                            <i class="fas fa-ban text-red-600 text-xl"></i>
                             <h3 class="text-base font-bold text-blue-900 dark:text-white">Cancellation & Tatkal Rules</h3>
                         </div>
-                        <i class="fas fa-chevron-down text-red-650 transition duration-200"></i>
+                        <i class="fas fa-chevron-down text-red-600 transition duration-200"></i>
                     </button>
                     <div class="faq-content hidden px-6 py-4 bg-slate-50/50 dark:bg-slate-900/20 space-y-4 border-t dark:border-slate-700">
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">What are IRCTC cancellation charges?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Charges depend on days before travel: 0-1 days = 50% + GST | 2-3 days = 25% + GST | 4-7 days = 10% + GST | 8+ days = 5% + GST. Tatkal charges don't apply to Tatkal bookings.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Charges depend on days before travel: 0-1 days = 50% + GST | 2-3 days = 25% + GST | 4-7 days = 10% + GST | 8+ days = 5% + GST. Tatkal charges don't apply to Tatkal bookings.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">When is Tatkal booking available?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Tatkal bookings open at 10:00 AM (for trains departing next day). Tatkal charges apply + additional Tatkal fee. Premium Tatkal opens 10 days in advance at 10:00 AM.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Tatkal bookings open at 10:00 AM (for trains departing next day). Tatkal charges apply + additional Tatkal fee. Premium Tatkal opens 10 days in advance at 10:00 AM.</p>
                         </div>
                         <div class="faq-item pb-4 border-b dark:border-slate-700">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">Can RAC tickets be cancelled?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Yes. RAC (Reservation Against Cancellation) tickets can be cancelled with charges: Before 48 hours = 50% refund | Within 48 hours = No refund.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Yes. RAC (Reservation Against Cancellation) tickets can be cancelled with charges: Before 48 hours = 50% refund | Within 48 hours = No refund.</p>
                         </div>
                         <div class="faq-item">
                             <h4 class="font-bold text-gray-800 dark:text-slate-200 mb-1.5 text-sm">What's the difference between Tatkal and Premium Tatkal?</h4>
-                            <p class="text-gray-550 dark:text-gray-400 text-xs leading-relaxed">Tatkal: 2A/3A/SL coaches, booking 1 day before | Premium Tatkal: 1A/2A/3A, booking up to 180 days in advance. PT charges are higher but offer more options and classes.</p>
+                            <p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">Tatkal: 2A/3A/SL coaches, booking 1 day before | Premium Tatkal: 1A/2A/3A, booking up to 180 days in advance. PT charges are higher but offer more options and classes.</p>
                         </div>
                     </div>
                 </div>
@@ -407,7 +407,7 @@
         </section>
 
         <!-- SECTION 5: CONTACT SUPPORT -->
-        <section class="hero-bg text-white py-16">
+        <section class="inner-hero-bg text-white py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-extrabold mb-12 text-center">Contact Support</h2>
 
@@ -416,17 +416,17 @@
                     <div class="text-center bg-white dark:bg-slate-800/80 rounded-xl p-8 border border-blue-100/10 dark:border-slate-700 shadow-md">
                         <div class="text-4xl mb-4">☎️</div>
                         <h3 class="text-lg font-bold mb-2 text-blue-900 dark:text-white">Call Us</h3>
-                        <p class="mb-4 text-xs text-gray-550 dark:text-gray-400 font-semibold">Customer Support Number</p>
+                        <p class="mb-4 text-xs text-gray-500 dark:text-gray-400 font-semibold">Customer Support Number</p>
                         <p class="text-2xl font-extrabold mb-2 text-blue-900 dark:text-orange-400">139</p>
-                        <p class="text-[11px] text-gray-500 dark:text-gray-450">From Railway Network</p>
-                        <p class="text-[11px] text-gray-550 dark:text-gray-450 mt-1 font-semibold">or 1800-111-139 (Toll-Free)</p>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400">From Railway Network</p>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-1 font-semibold">or 1800-111-139 (Toll-Free)</p>
                     </div>
 
                     <!-- Support Option 2: Email -->
                     <div class="text-center bg-white dark:bg-slate-800/80 rounded-xl p-8 border border-blue-100/10 dark:border-slate-700 shadow-md">
                         <div class="text-4xl mb-4">✉️</div>
                         <h3 class="text-lg font-bold mb-2 text-blue-900 dark:text-white">Email Support</h3>
-                        <p class="mb-4 text-xs text-gray-550 dark:text-gray-400 font-semibold">Send us your query</p>
+                        <p class="mb-4 text-xs text-gray-500 dark:text-gray-400 font-semibold">Send us your query</p>
                         <p class="font-mono text-xs mb-3 text-blue-800 dark:text-orange-400 bg-blue-50/50 dark:bg-slate-900 p-2 rounded-lg font-bold">support@irctc.co.in</p>
                         <p class="text-[11px] text-gray-500 dark:text-gray-400">Response within 24 hours</p>
                     </div>
@@ -435,9 +435,9 @@
                     <div class="text-center bg-white dark:bg-slate-800/80 rounded-xl p-8 border border-blue-100/10 dark:border-slate-700 shadow-md">
                         <div class="text-4xl mb-4">🕐</div>
                         <h3 class="text-lg font-bold mb-2 text-blue-900 dark:text-white">Helpdesk Hours</h3>
-                        <p class="mb-2 text-xs text-gray-550 dark:text-gray-400 font-semibold">24 hours / 7 days</p>
+                        <p class="mb-2 text-xs text-gray-500 dark:text-gray-400 font-semibold">24 hours / 7 days</p>
                         <p class="text-base font-extrabold mb-2 text-blue-900 dark:text-white">Available Round-the-Clock</p>
-                        <p class="text-[11px] text-gray-550 dark:text-gray-400">Even on holidays & weekends</p>
+                        <p class="text-[11px] text-gray-500 dark:text-gray-400">Even on holidays & weekends</p>
                     </div>
 
                     <!-- Support Option 4: Live Chat -->
@@ -445,7 +445,7 @@
                         <div>
                             <div class="text-4xl mb-4">💬</div>
                             <h3 class="text-lg font-bold mb-2 text-blue-900 dark:text-white">Live Chat</h3>
-                            <p class="mb-4 text-xs text-gray-550 dark:text-gray-400 font-semibold font-sans">Chat with our support team</p>
+                            <p class="mb-4 text-xs text-gray-500 dark:text-gray-400 font-semibold font-sans">Chat with our support team</p>
                         </div>
                         <button onclick="openDishaChat()" class="btn-primary py-2 px-4 text-xs font-bold rounded-lg shadow mt-2">Chat Now</button>
                     </div>
@@ -467,12 +467,12 @@
         <section id="submitForm" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 animate-fadeInUp delay-100">
             <div class="card p-8">
                 <h2 class="text-2xl font-bold text-blue-900 dark:text-white mb-2">Submit a Problem</h2>
-                <p class="text-gray-550 dark:text-gray-400 text-sm mb-8">Tell us about your issue and our team will help you resolve it quickly.</p>
+                <p class="text-gray-500 dark:text-gray-400 text-sm mb-8">Tell us about your issue and our team will help you resolve it quickly.</p>
 
                 <form id="problemForm" class="space-y-6">
                     <!-- Issue Type Dropdown -->
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-350 uppercase tracking-wider mb-2">Issue Type *</label>
+                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-300 uppercase tracking-wider mb-2">Issue Type *</label>
                         <select id="issueType" class="search-input" required>
                             <option value="">Select issue type</option>
                             <option value="payment">Payment Issue</option>
@@ -488,7 +488,7 @@
 
                     <!-- PNR Number -->
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-350 uppercase tracking-wider mb-2">PNR Number (if applicable)</label>
+                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-300 uppercase tracking-wider mb-2">PNR Number (if applicable)</label>
                         <input 
                             type="text" 
                             id="pnrNumber" 
@@ -500,7 +500,7 @@
 
                     <!-- Email -->
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-350 uppercase tracking-wider mb-2">Email Address *</label>
+                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
                         <input 
                             type="email" 
                             id="userEmail" 
@@ -512,7 +512,7 @@
 
                     <!-- Description -->
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-350 uppercase tracking-wider mb-2">Describe Your Issue *</label>
+                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-300 uppercase tracking-wider mb-2">Describe Your Issue *</label>
                         <textarea 
                             id="issueDescription" 
                             rows="6" 
@@ -524,7 +524,7 @@
 
                     <!-- File Upload -->
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-350 uppercase tracking-wider mb-2">Upload Screenshot / Attachment</label>
+                        <label class="block text-xs font-bold text-gray-700 dark:text-slate-300 uppercase tracking-wider mb-2">Upload Screenshot / Attachment</label>
                         <div class="border-2 border-dashed border-gray-300 dark:border-slate-700 hover:border-blue-600 dark:hover:border-orange-500 rounded-xl p-6 text-center transition cursor-pointer bg-slate-50 dark:bg-slate-900/30">
                             <input type="file" id="fileUpload" class="hidden" accept="image/*,.pdf">
                             <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 dark:text-gray-500 mb-3 block"></i>
@@ -538,7 +538,7 @@
                     <!-- Checkbox -->
                     <div class="flex items-center gap-3">
                         <input type="checkbox" id="agreeTerms" class="w-4 h-4 rounded accent-blue-600" required>
-                        <label class="text-gray-650 dark:text-slate-300 text-xs">I agree to IRCTC terms and understand this is for genuine support only</label>
+                        <label class="text-gray-600 dark:text-slate-300 text-xs">I agree to IRCTC terms and understand this is for genuine support only</label>
                     </div>
 
                     <!-- Submit Button -->
@@ -606,7 +606,7 @@
         </div>
     </footer>
 
-    <script src="help.js"></script>
-    <script src="disha-chatbot.js"></script>
+    <script src="assets/js/help.js"></script>
+    <script src="assets/js/disha-chatbot.js"></script>
 </body>
 </html>
